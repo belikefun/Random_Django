@@ -1,0 +1,8 @@
+<form action="{% url 'Random:generate' Random.start Random.end %}" method = "POST">
+	{% csrf_token %}
+	<input type="text" required placeholder="„исло от" name="start"><br>
+	<input type="text" required placeholder="„исло до" name="end"><br>
+	<button type="submit">—генерировать число</button>
+
+
+</form>
